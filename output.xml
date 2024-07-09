@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-09T07:38:30.882700" rpa="false" schemaversion="5">
+<suite id="s1" name="Todo List Case 1 1" source="/Users/hackbook/Documents/pang_robot/todo/test/todo_list_case_1_1.robot">
+<kw name="Open Browser To To-Do List Page" owner="todo_list_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:31.211144" level="INFO">Opening browser 'Chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<arg>${WEB_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-09T07:38:31.210646" elapsed="3.070877"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-09T07:38:34.282664" elapsed="0.042875"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:34.326743" level="INFO">Clicking element 'css=a[href='#add-item']'.</msg>
+<arg>css=a[href='#add-item']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:34.325911" elapsed="0.148839"/>
+</kw>
+<status status="PASS" start="2024-07-09T07:38:31.209596" elapsed="3.265531"/>
+</kw>
+<test id="s1-t1" name="Test Add New Task" line="8">
+<kw name="Add Task" owner="todo_list_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:34.479647" level="INFO">Typing text 'รักน้ำ' into text field 'id=new-task'.</msg>
+<arg>id=new-task</arg>
+<arg>${task_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:34.478726" elapsed="0.311578"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Add " ${task_name} "to To-Do List -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:34.790694" elapsed="0.000696"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:34.792042" level="INFO">Clicking button 'css=.mdl-button--fab'.</msg>
+<arg>css=.mdl-button--fab</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:34.791707" elapsed="0.147028"/>
+</kw>
+<arg>รักน้ำ</arg>
+<status status="PASS" start="2024-07-09T07:38:34.478133" elapsed="0.461213"/>
+</kw>
+<kw name="Add Task" owner="todo_list_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:34.941059" level="INFO">Typing text 'Lovefish' into text field 'id=new-task'.</msg>
+<arg>id=new-task</arg>
+<arg>${task_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:34.940567" elapsed="0.208232"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Add " ${task_name} "to To-Do List -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.149405" elapsed="0.000549"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:35.151379" level="INFO">Clicking button 'css=.mdl-button--fab'.</msg>
+<arg>css=.mdl-button--fab</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.150333" elapsed="0.121354"/>
+</kw>
+<arg>Lovefish</arg>
+<status status="PASS" start="2024-07-09T07:38:34.939954" elapsed="0.332105"/>
+</kw>
+<kw name="Add Task" owner="todo_list_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:35.273774" level="INFO">Typing text '❤️Pangมั้ยคะ01' into text field 'id=new-task'.</msg>
+<arg>id=new-task</arg>
+<arg>${task_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.273274" elapsed="0.151712"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Add " ${task_name} "to To-Do List -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.425233" elapsed="0.000584"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:35.426636" level="INFO">Clicking button 'css=.mdl-button--fab'.</msg>
+<arg>css=.mdl-button--fab</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.426174" elapsed="0.128355"/>
+</kw>
+<arg>❤️Pangมั้ยคะ01</arg>
+<status status="PASS" start="2024-07-09T07:38:35.272613" elapsed="0.282243"/>
+</kw>
+<doc>ทดสอบการเพิ่ม todo ใหม่ในรายการ 🔔</doc>
+<status status="PASS" start="2024-07-09T07:38:34.475569" elapsed="1.079738"/>
+</test>
+<test id="s1-t2" name="Test To-Do List" line="14">
+<kw name="Go To To-Do List" owner="todo_list_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:35.557856" level="INFO">Clicking element 'css=a[href='#todo']'.</msg>
+<arg>css=a[href='#todo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.557487" elapsed="0.124330"/>
+</kw>
+<status status="PASS" start="2024-07-09T07:38:35.556958" elapsed="0.125127"/>
+</kw>
+<doc>ทดสอบการเปลี่ยน Tab🔔</doc>
+<status status="PASS" start="2024-07-09T07:38:35.555905" elapsed="0.126602"/>
+</test>
+<test id="s1-t3" name="Verify Task Should Be Present Case 1" line="19">
+<kw name="Task Should Be Present todo" owner="todo_list_resources">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:35.772246" level="INFO">${actual_text} = รักน้ำ</msg>
+<var>${actual_text}</var>
+<arg>css=span#text-${index}.mdl-checkbox__label</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.688466" elapsed="0.083900"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${expected_text}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.772771" elapsed="0.000780"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${actual_text} have equal ${expected_text} !</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.773925" elapsed="0.000827"/>
+</kw>
+<arg>รักน้ำ</arg>
+<arg>1</arg>
+<status status="PASS" start="2024-07-09T07:38:35.686908" elapsed="0.088198"/>
+</kw>
+<kw name="Task Should Be Present todo" owner="todo_list_resources">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:35.860044" level="INFO">${actual_text} = Lovefish</msg>
+<var>${actual_text}</var>
+<arg>css=span#text-${index}.mdl-checkbox__label</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.776480" elapsed="0.083680"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${expected_text}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.860576" elapsed="0.000671"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${actual_text} have equal ${expected_text} !</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.861650" elapsed="0.000753"/>
+</kw>
+<arg>Lovefish</arg>
+<arg>2</arg>
+<status status="PASS" start="2024-07-09T07:38:35.775695" elapsed="0.086975"/>
+</kw>
+<kw name="Task Should Be Present todo" owner="todo_list_resources">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:35.992582" level="INFO">${actual_text} = ❤️Pangมั้ยคะ01</msg>
+<var>${actual_text}</var>
+<arg>css=span#text-${index}.mdl-checkbox__label</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.864113" elapsed="0.128579"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${expected_text}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.993457" elapsed="0.004129"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${actual_text} have equal ${expected_text} !</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:35.997958" elapsed="0.000685"/>
+</kw>
+<arg>❤️Pangมั้ยคะ01</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-07-09T07:38:35.863226" elapsed="0.135706"/>
+</kw>
+<doc>ค่าที่กรอกเท่ากับที่เพิ่ม 🔔</doc>
+<status status="PASS" start="2024-07-09T07:38:35.683204" elapsed="0.316151"/>
+</test>
+<test id="s1-t4" name="Verify click Task Case 1" line="26">
+<kw name="Click Task Case Todo" owner="todo_list_resources">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.009890" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.007279" elapsed="0.002722"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.015445" level="INFO">Clicking element 'css=span#text-1.mdl-checkbox__label'.</msg>
+<arg>css=span#text-1.mdl-checkbox__label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.014080" elapsed="0.119063"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.135018" level="INFO">${count} = 2</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.133672" elapsed="0.001439"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Click Task " ${expected_text} " -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.135405" elapsed="0.000839"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.139101" level="INFO">${expected_text} = 02</msg>
+<var>${expected_text}</var>
+<arg>0${count}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.138495" elapsed="0.000743"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-07-09T07:38:36.013569" elapsed="0.125915"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.141638" level="INFO">Clicking element 'css=span#text-1.mdl-checkbox__label'.</msg>
+<arg>css=span#text-1.mdl-checkbox__label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.140740" elapsed="0.086857"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.229029" level="INFO">${count} = 3</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.228230" elapsed="0.000893"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Click Task " ${expected_text} " -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.229465" elapsed="0.000697"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.231197" level="INFO">${expected_text} = 03</msg>
+<var>${expected_text}</var>
+<arg>0${count}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.230528" elapsed="0.000751"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-07-09T07:38:36.140263" elapsed="0.091160"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.232740" level="INFO">Clicking element 'css=span#text-1.mdl-checkbox__label'.</msg>
+<arg>css=span#text-1.mdl-checkbox__label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.232071" elapsed="0.099460"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.332496" level="INFO">${count} = 4</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.331894" elapsed="0.000678"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Click Task " ${expected_text} " -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.332862" elapsed="0.000451"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.336011" level="INFO">${expected_text} = 04</msg>
+<var>${expected_text}</var>
+<arg>0${count}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.333758" elapsed="0.002377"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-07-09T07:38:36.231788" elapsed="0.104541"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>4</value>
+<status status="PASS" start="2024-07-09T07:38:36.010313" elapsed="0.326173"/>
+</for>
+<arg>01</arg>
+<status status="PASS" start="2024-07-09T07:38:36.005516" elapsed="0.331393"/>
+</kw>
+<kw name="Go To completed" owner="todo_list_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.339059" level="INFO">Clicking element 'css=a[href='#completed']'.</msg>
+<arg>css=a[href='#completed']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.338501" elapsed="0.121469"/>
+</kw>
+<status status="PASS" start="2024-07-09T07:38:36.337458" elapsed="0.122754"/>
+</kw>
+<doc>ทดสอบการส่งค่าไปหน้า completed 🔔</doc>
+<status status="PASS" start="2024-07-09T07:38:35.999947" elapsed="0.460632"/>
+</test>
+<test id="s1-t5" name="Verify Task should be Completed Case 1" line="31">
+<kw name="Task Should Be Contains" owner="todo_list_resources">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.509435" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.24")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.468309" elapsed="0.041244"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.530060" level="INFO">${actual_text} = doneรักน้ำ</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.509962" elapsed="0.020240"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.532390" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.531150" elapsed="0.001398"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.533436" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.532924" elapsed="0.000590"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.537288" elapsed="0.001109"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.533927" elapsed="0.004857"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-07-09T07:38:36.467339" elapsed="0.071626"/>
+</iter>
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.566034" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.25")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.539618" elapsed="0.026653"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.592486" level="INFO">${actual_text} = doneLovefish</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.567102" elapsed="0.025483"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.593403" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.592934" elapsed="0.000545"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.594207" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.593793" elapsed="0.000485"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.595330" elapsed="0.000716"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.594603" elapsed="0.001649"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-07-09T07:38:36.539346" elapsed="0.057061"/>
+</iter>
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.625255" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.26")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.597047" elapsed="0.028306"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.644362" level="INFO">${actual_text} = done❤️Pangมั้ยคะ01</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.625751" elapsed="0.018712"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.645602" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.644929" elapsed="0.000824"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.647228" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.646531" elapsed="0.000779"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.648570" elapsed="0.000766"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.647655" elapsed="0.002120"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-07-09T07:38:36.596767" elapsed="0.053430"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>4</value>
+<status status="PASS" start="2024-07-09T07:38:36.465345" elapsed="0.185268"/>
+</for>
+<arg>รักน้ำ</arg>
+<status status="PASS" start="2024-07-09T07:38:36.463547" elapsed="0.188559"/>
+</kw>
+<kw name="Task Should Be Contains" owner="todo_list_resources">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.690139" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.24")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.658137" elapsed="0.032095"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.709993" level="INFO">${actual_text} = doneรักน้ำ</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.690544" elapsed="0.019663"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.711230" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.710654" elapsed="0.000652"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.712302" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.711730" elapsed="0.000665"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.714918" elapsed="0.003709"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.712826" elapsed="0.006287"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-07-09T07:38:36.655247" elapsed="0.064667"/>
+</iter>
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.736436" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.25")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.720704" elapsed="0.015804"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.763999" level="INFO">${actual_text} = doneLovefish</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.736765" elapsed="0.027337"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.766392" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.765491" elapsed="0.000992"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.768071" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.767366" elapsed="0.000807"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.769924" elapsed="0.001311"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.768645" elapsed="0.002898"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-07-09T07:38:36.720400" elapsed="0.051344"/>
+</iter>
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.788241" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.26")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.772511" elapsed="0.015827"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.804569" level="INFO">${actual_text} = done❤️Pangมั้ยคะ01</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.788669" elapsed="0.015960"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.805156" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.804857" elapsed="0.000344"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.805625" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.805375" elapsed="0.000292"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.806222" elapsed="0.000385"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.805846" elapsed="0.000879"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-07-09T07:38:36.772239" elapsed="0.034575"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>4</value>
+<status status="PASS" start="2024-07-09T07:38:36.654778" elapsed="0.152121"/>
+</for>
+<arg>Lovefish</arg>
+<status status="PASS" start="2024-07-09T07:38:36.653298" elapsed="0.153731"/>
+</kw>
+<kw name="Task Should Be Contains" owner="todo_list_resources">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.821027" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.24")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.808062" elapsed="0.013070"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.836703" level="INFO">${actual_text} = doneรักน้ำ</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.821466" elapsed="0.015327"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.837962" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.837234" elapsed="0.000828"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.839252" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.838611" elapsed="0.000718"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.840339" elapsed="0.000862"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.839585" elapsed="0.001951"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-07-09T07:38:36.807918" elapsed="0.033785"/>
+</iter>
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.855753" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.25")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.842606" elapsed="0.013240"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.869936" level="INFO">${actual_text} = doneLovefish</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.856187" elapsed="0.013838"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.870882" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.870373" elapsed="0.000568"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.871632" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.871224" elapsed="0.000458"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.872340" elapsed="0.000527"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.871886" elapsed="0.001154"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-07-09T07:38:36.842226" elapsed="0.030955"/>
+</iter>
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.888958" level="INFO">${element_label1} = &lt;selenium.webdriver.remote.webelement.WebElement (session="21fd3c32db22744f43ea696360472cbb", element="f.9651FA1B491886CE357E25F3B4308A96.d.08351318402AE917CC404B1F5B76E170.e.26")&gt;</msg>
+<var>${element_label1}</var>
+<arg>css=.mdl-list:nth-child(${index}) &gt; .mdl-list__item-primary-content</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.873733" elapsed="0.015285"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.906922" level="INFO">${actual_text} = done❤️Pangมั้ยคะ01</msg>
+<var>${actual_text}</var>
+<arg>${element_label1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.889305" elapsed="0.017679"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.907808" level="INFO">${found} = 0</msg>
+<var>${found}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.907330" elapsed="0.000546"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-09T07:38:36.908579" level="INFO">${notfound} = 0</msg>
+<var>${notfound}</var>
+<arg>0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.908224" elapsed="0.000419"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.911292" elapsed="0.001893"/>
+</kw>
+<arg>"${actual_text}" == "done${expected_text}"</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should contain " ${expected_text} " \n Passed ✅ In row ${index}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>\n💬 Record ${index}\n Verify ${actual_text} should not contain " ${expected_text} "</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.909019" elapsed="0.004454"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-07-09T07:38:36.873504" elapsed="0.040088"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>4</value>
+<status status="PASS" start="2024-07-09T07:38:36.807663" elapsed="0.106069"/>
+</for>
+<arg>❤️Pangมั้ยคะ01</arg>
+<status status="PASS" start="2024-07-09T07:38:36.807358" elapsed="0.106688"/>
+</kw>
+<doc>งานเสร็จสมบูรณ์แล้ว 🔔</doc>
+<status status="PASS" start="2024-07-09T07:38:36.461144" elapsed="0.453326"/>
+</test>
+<test id="s1-t6" name="Verify click delete Task Completed" line="38">
+<kw name="click delete Task in Completed" owner="todo_list_resources">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:36.921247" level="INFO">Clicking element 'xpath=//button[@id='1']'.</msg>
+<arg>xpath=//button[@id='1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.920932" elapsed="0.076997"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Delete Task -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:36.998622" elapsed="0.001315"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-07-09T07:38:36.920355" elapsed="0.079806"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:37.001379" level="INFO">Clicking element 'xpath=//button[@id='1']'.</msg>
+<arg>xpath=//button[@id='1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:37.000900" elapsed="0.132148"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Delete Task -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:37.133405" elapsed="0.000288"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-07-09T07:38:37.000705" elapsed="0.133210"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-09T07:38:37.137168" level="INFO">Clicking element 'xpath=//button[@id='1']'.</msg>
+<arg>xpath=//button[@id='1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-09T07:38:37.134882" elapsed="0.100567"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n Delete Task -- Completed ✅</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-09T07:38:37.235683" elapsed="0.000256"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-07-09T07:38:37.134493" elapsed="0.101531"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>4</value>
+<status status="PASS" start="2024-07-09T07:38:36.919888" elapsed="0.316223"/>
+</for>
+<status status="PASS" start="2024-07-09T07:38:36.918499" elapsed="0.317769"/>
+</kw>
+<doc>ทดสอบการ delete หน้า completed 🔔</doc>
+<status status="PASS" start="2024-07-09T07:38:36.915179" elapsed="0.321314"/>
+</test>
+<test id="s1-t7" name="End process" line="44">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-09T07:38:37.237483" elapsed="0.243588"/>
+</kw>
+<doc>⭐️ Test Completed ⭐️</doc>
+<status status="PASS" start="2024-07-09T07:38:37.236828" elapsed="0.245816"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-09T07:38:37.484695" elapsed="0.000387"/>
+</kw>
+<status status="PASS" start="2024-07-09T07:38:30.884983" elapsed="6.600255"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Todo List Case 1 1">Todo List Case 1 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

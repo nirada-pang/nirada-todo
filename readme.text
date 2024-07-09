@@ -1,0 +1,53 @@
+#ขั้นตอนการติดตั้ง Robot Framework สำหรับการทดสอบโปรเจค
+ติดตั้ง Python
+ดาวน์โหลดและติดตั้ง Python จาก python.org
+ตรวจสอบว่าติดตั้งสำเร็จโดยเปิด Terminal หรือ Command Prompt แล้วพิมพ์คำสั่ง:
+
+python --version
+
+ติดตั้ง Visual Studio Code (VSCode)
+ดาวน์โหลดและติดตั้ง Visual Studio Code จาก code.visualstudio.com
+เปิด VSCode แล้วติดตั้งส่วนเสริม (Extension) ที่เกี่ยวข้องกับ Python และ Robot Framework 
+เช่น:
+Python (by Microsoft)
+Robot Framework Language Server (by Robocorp)
+
+สร้าง Virtual Environment
+เปิด Terminal หรือ Command Prompt ในโฟลเดอร์โปรเจค
+สร้าง Virtual Environment โดยใช้คำสั่ง:
+
+python -m venv env
+
+เปิดใช้งาน Virtual Environment:
+สำหรับ Windows:
+.\env\Scripts\activate
+
+สำหรับ macOS และ Linux:
+source ./env/bin/activate
+
+ติดตั้ง Robot Framework และ Selenium Library
+
+ติดตั้ง Robot Framework โดยใช้คำสั่ง:
+pip install robotframework
+
+ติดตั้ง Selenium และ Robot Framework Selenium Library โดยใช้คำสั่ง:
+pip install selenium
+pip install robotframework-seleniumlibrary
+
+ตรวจสอบการติดตั้ง
+
+ตรวจสอบว่า Robot Framework ติดตั้งสำเร็จโดยพิมพ์คำสั่ง:
+robot --version
+ตรวจสอบว่า Selenium Library ติดตั้งสำเร็จโดยพิมพ์คำสั่ง:
+pip show robotframework-seleniumlibrary
+
+
+เปิด Terminal ในโฟลเดอร์โปรเจคของคุณ
+ใช้คำสั่งเพื่อเรียกใช้การทดสอบ:
+
+Robot test/todo_list_case_1_1.robot 
+Robot test/todo_list_case_1.robot
+Robot test/todo_list_case_2.robot
+Robot test/todo_list_case_3.robot
+
+#####################################
